@@ -2076,8 +2076,16 @@ h3.project-title{
 }
 
 /* Hero */
-.hero-5-4 .media-column{
-	background-image: url(../images/portfolio/projects/hero-half-1.jpg);
+.hero-5-4 .media-column-purple{
+	background-image: url(../images2/purplehome.jpg);
+}
+
+.hero-5-4 .media-column-ticketpug{
+	background-image: url(../images2/ticketpugdbschema.jpg);
+}
+
+.hero-5-4 .media-column-bsf{
+	background-image: url(../images2/bsfneo4j.jpg);
 }
 
 /* Folio Filter */
@@ -3706,7 +3714,7 @@ blockquote.border{
 .pricing-table-column.callout.with-background-image{
 	background-image: url(../images/generic/pricing-table.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: center;
 	background-position: center;
 }
 .pricing-table-column.callout.with-background-image > *{
@@ -3828,8 +3836,14 @@ only screen and (				min-resolution: 2dppx) {
 	.hero-5-3 .media-column{
 		background-image: url(../images/services/hero-half-1@2x.jpg);
 	}
-	.hero-5-4 .media-column{
-		background-image: url(../images/portfolio/projects/hero-half-1@2x.jpg);
+	.hero-5-4 .media-column-purple{
+		background-image: url(../images2/purplehome.jpg);
+	}
+	.hero-5-4 .media-column-ticketpug{
+		background-image: url(../images2/ticketpugdbschema.jpg);
+	}
+	.hero-5-4 .media-column-bsf{
+		background-image: url(../images2/bsfneo4j.jpg);
 	}
 
 	/* Call to Action Sections */
