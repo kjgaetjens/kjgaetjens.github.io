@@ -47,7 +47,10 @@
 									<a href="purple.html">Purple</a>
 								</li>
 								<li>
-									<a href="prop37map.html">Prop 37 Map</a>
+									<a href="prop37map.html">Proposition 37 Map</a>
+								</li>
+								<li>
+									<a href="files/NavarroStreamsAndBasinSoils.pdf" target="_blank" download>Navarro Basin Soils Map</a>
 								</li>
 								<li>
 									<a href="bsf.html">"Broken" Street Fighter</a>
@@ -208,21 +211,24 @@
 									<li>
 										<a>Projects</a>
 										<ul class="sub-menu">
-                                            <li>
-                                                <a href="walkable.html">Walkable</a>
-                                            </li>
-                                            <li>
-                                                <a href="purple.html">Purple</a>
-                                            </li>
-                                            <li>
-                                                <a href="prop37map.html">Prop 37 Map</a>
-                                            </li>
-                                            <li>
-                                                <a href="bsf.html">"Broken" Street Fighter</a>
-                                            </li>
-                                            <li>
-                                                <a href="ticketpug.html">TicketPug</a>
-                                            </li>
+											<li>
+												<a href="walkable.html">Walkable</a>
+											</li>
+											<li>
+												<a href="purple.html">Purple</a>
+											</li>
+											<li>
+												<a href="prop37map.html">Proposition 37 Map</a>
+											</li>
+											<li>
+												<a href="files/NavarroStreamsAndBasinSoils.pdf" target="_blank" download>Navarro Basin Soils Map</a>
+											</li>
+											<li>
+												<a href="bsf.html">"Broken" Street Fighter</a>
+											</li>
+											<li>
+												<a href="ticketpug.html">TicketPug</a>
+											</li>
 										</ul>
 									</li>
 									<!-- <li>
@@ -289,16 +295,18 @@
 
 				<!-- Hero 5 Section -->
 				<div class="section-block hero-5 hero-5-4 clear-height right show-media-column-on-mobile">
-					<div class="media-column media-column-ticketpug width-5"></div>
+					<div class="media-column media-column-prop37map width-5"></div>
 					<div class="row">
 						<div class="column width-6">
 							<div class="hero-content split-hero-content">
 								<div class="hero-content-inner left horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;delay:200ms;" data-threshold="0.5">
 									<h3 class="mb-50">Brief</h3>
-									<p class="lead">TicketPug is a proof-of-concept e-commerce site that allows users to purchase concert tickets directly from the venue hosting the event.</p>
-									<p class="mb-50">The aim of the project was to create a way to cut down on the amount of fees commonly associated with ticket purchases. By allowing the user to buy directly from the ticket stash allotted to venues, users can bypass some of the costlier ticket sellers. Users are able to search through the Ticketmaster API and explore events based on relevant search terms (including: artist, venue and location). Users are able to search without creating an account but if a user would like to favorite an event or make a purchase, an account will need to be created.</p>
+									<p class="lead">Proposition 37 Map looks at broad voting patterns in California on Proposition 37 in 2012.</p>
+									<p class="mb-50">This map was created for a hypothetical scenario where I work in the field of electoral politics, and am specifically interested in ballot measures, where citizens vote directly to enact new laws. In this scenario, an agency partner in California has provided me with precinct level voting data – polygons matching the actual voting locations in the state, but this information is too noisy to notice true trends. To visualize broad voting patterns, I aggregated data to the County level and generated a map using the following steps.<br><br>
+									The Counties layer was created using data provided by UC Davis Extension via the Fundamentals of GIS course. The PrecinctVotingDataSummarizedByCounty table was created by using ArcGIS's summarization tool on Precinct Voting Data. Total Votes and Yes Votes were summarized by the County field in the Precinct Voting Data source table. The resulting output, PrecinctVotingDataSummarizedByCounty, was joined to the Counties layer on Counties.FIPS_CODE and PreinctVotingDataSummarizedByCounty.COUNTY. This provided a more precise join than using a Spatial Join, as some precinct lines cross county lines.</p>
 									<ul class="social-list list-horizontal">
-										<li><a onclick="window.open('https://github.com/kjgaetjens/ticketpug')" title="View GitHub Repository"><span class="icon-github small"></span></a></li>
+										<li><a onclick="window.open('http://www.arcgis.com/home/item.html?id=3ad2b77860114d66840654d2eeaed9ea')" title="View GitHub Repository"><span class="icon-laptop small"></span></a></li>
+										<li><a href="files/California2012Proposition37.pdf" target="_blank" download><span class="icon-map small"></span></a></li>
 									</ul>
 								</div>
 							</div>
@@ -307,52 +315,8 @@
 				</div>
 				<!-- Hero 5 Section End -->
 
-				<!-- Content -->
-				<div class="section-block replicable-content bkg-grey-ultralight">
-					<div class="row">
-						<div class="column width-12">
-							<div class="video-container">
-								<iframe src="https://player.vimeo.com/video/357991226" width="480" height="280" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="section-block replicable-content">
-					<div class="row">
-						<div class="column width-3 offset-2">
-							<h3 class="mb-50">Technologies</h3>
-						</div>
-						<div class="column width-5">
-							<p>TicketPug was built with JavaScript, Node.js, Express.js, REST API, PostgreSQL, Sequelize ORM, HTML, CSS, and Pug. TicketPug's core functionality is driven by a PostgreSQL database and querying and manipulation of the database with Sequelize ORM. Bcrypt was utilized for encryption of user data and Stripe was utilized for payment processing.</p>
-						</div>
-					</div>
-				</div>
-				<div class="section-block no-padding-top">
-					<div class="row">
-						<div class="column width-12">
-							<div class="tm-slider-container content-slider" data-animation="slide" data-width="2880" data-height="1800" data-scale-under="960">
-								<ul class="tms-slides">
-									<li class="tms-slide" data-image data-as-bkg-image data-force-fit>
-										<img data-src="images2/ticketpugsearch.jpg" src="images/blank.png" alt=""/>
-									</li>
-									<li class="tms-slide" data-image data-as-bkg-image data-force-fit>
-										<img data-src="images2/ticketpugsearchresults.jpg" src="images/blank.png" alt=""/>
-									</li>
-									<li class="tms-slide" data-image data-as-bkg-image data-force-fit>
-										<img data-src="images2/ticketpugselect.jpg" src="images/blank.png" alt=""/>
-									</li>
-									<li class="tms-slide" data-image data-as-bkg-image data-force-fit>
-										<img data-src="images2/ticketpugbilling.jpg" src="images/blank.png" alt=""/>
-									</li>
-									<li class="tms-slide" data-image data-as-bkg-image data-force-fit>
-										<img data-src="images2/ticketpugconfirmation.jpg" src="images/blank.png" alt=""/>
-									</li>						
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
 				<!-- Pagination Section 3 -->
+				<br><br>
 				<div class="section-block pagination-3 portfolio no-padding-top">
 					<div class="row">
 						<div class="column width-12">
