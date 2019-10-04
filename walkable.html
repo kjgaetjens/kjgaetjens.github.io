@@ -101,7 +101,7 @@
 		<div class="wrapper-inner">
 
 			<!-- Header -->
-			<header class="header header-fixed header-fixed-on-mobile header-transparent" 			<header class="header header-fixed header-fixed-on-mobile header-transparent" data-bkg-threshold="100">
+			<header class="header header-fixed header-fixed-on-mobile header-transparent" data-bkg-threshold="100">
 				<div class="header-inner">
 					<div class="row nav-bar">
 						<div class="column width-12 nav-bar-inner">
@@ -208,21 +208,21 @@
 									<li>
 										<a>Projects</a>
 										<ul class="sub-menu">
-											<li>
-												<a href="walkable.html">Walkable</a>
-											</li>
-											<li>
-												<a href="purple.html">Purple</a>
-											</li>
-											<li>
-												<a href="prop37map.html">Prop 37 Map</a>
-											</li>
-											<li>
-												<a href="bsf.html">"Broken" Street Fighter</a>
-											</li>
-											<li>
-												<a href="ticketpug.html">TicketPug</a>
-											</li>
+                                            <li>
+                                                <a href="walkable.html">Walkable</a>
+                                            </li>
+                                            <li>
+                                                <a href="purple.html">Purple</a>
+                                            </li>
+                                            <li>
+                                                <a href="prop37map.html">Prop 37 Map</a>
+                                            </li>
+                                            <li>
+                                                <a href="bsf.html">"Broken" Street Fighter</a>
+                                            </li>
+                                            <li>
+                                                <a href="ticketpug.html">TicketPug</a>
+                                            </li>
 										</ul>
 									</li>
 									<!-- <li>
@@ -275,7 +275,7 @@
 													data-animate-in="preset:slideInUpShort;duration:1000ms;"
 													data-no-scale
 												>
-													"Broken" Street Fighter
+													Walkable
 												</h1>
 											</div>
 										</div>
@@ -289,16 +289,16 @@
 
 				<!-- Hero 5 Section -->
 				<div class="section-block hero-5 hero-5-4 clear-height right show-media-column-on-mobile">
-					<div class="media-column media-column-bsf width-5"></div>
+					<div class="media-column media-column-walkable width-5"></div>
 					<div class="row">
 						<div class="column width-6">
 							<div class="hero-content split-hero-content">
 								<div class="hero-content-inner left horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;delay:200ms;" data-threshold="0.5">
 									<h3 class="mb-50">Brief</h3>
-									<p class="lead">"Broken" Street Fighter is an impact analysis site that allows users to determine which actions they can no longer use if one of their video game controls is broken.</p>
-									<p class="mb-50">As part of the coding bootcamp I'm attending, we were tasked with developing a "useless" application in two days. The only requirements we had to fulfill were that the application had to use a database, and it had to have a front-end interface. Although we did not cover graph databases in the coding bootcamp, I was familiar with the concept, and thought this would be a great opportunity to learn more. I knew one of the major use cases for graph databases was network and IT operations, and thought an arcade game would be the perfect way to represent this model. In two days, my partner and I learned how to use Neo4j graph database, Cypher querying language, and Neo4j's JavaScript driver, created a database, and developed a fully-functioning, Node.js-based, full-stack, "useless" application.</p>
+									<p class="lead">Walkable is a citizen participation and geospatial analysis site that allows users to send their location where they want a crosswalk, and allows admins to cluster, analyze, and visualize location data, or export coordinate tables.</p>
+									<p class="mb-50">With Walkable, local governments and NGOs can create their own sessions to get feedback from residents on where they want crosswalks. If a city government wanted to collect feedback, they could create a session and give it a name like "walkablecity".  Then, whenever a resident walked to a place where they want to cross, but couldn't, they could simply go to "walkable.herokuapp.com/walkablecity", click a button, and their coordinates would be stored. Once the city government's feedback collection session was over, they could visit their session dashboard. Walkable provides a powerful dashboard that allows users to cluster location data (with or without noise), visualize data on a map, and generate live data tables. Administrators could even export data for integration with their GIS systems or other analysis tools.</p>
 									<ul class="social-list list-horizontal">
-										<li><a onclick="window.open('https://github.com/kjgaetjens/bsf')" title="View GitHub Repository"><span class="icon-github small"></span></a></li>
+										<li><a onclick="window.open('https://github.com/kjgaetjens/walkable')" title="View GitHub Repository"><span class="icon-github small"></span></a></li>
 									</ul>
 								</div>
 							</div>
@@ -312,8 +312,9 @@
 					<div class="row">
 						<div class="column width-12">
 							<div class="video-container">
-								<iframe title="vimeo-player" src="https://player.vimeo.com/video/357986114" width="480" height="280" frameborder="0" allowfullscreen></iframe>
-							</div>
+								<!-- <iframe src="https://player.vimeo.com/video/364169505?title=0&mp;byline=0&amp;portrait=0&amp;color=0cbacf" width="500" height="281"></iframe> -->
+								<iframe src="https://player.vimeo.com/video/364169505" width="480" height="280" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            </div>
 						</div>
 					</div>
 				</div>
@@ -323,40 +324,49 @@
 							<h3 class="mb-50">Concept</h3>
 						</div>
 						<div class="column width-5">
-							<p>In Street fighter, a combo (somersault kick) is dependent on an action (jump), which is dependent on a control (joystick), but only when the control is moved in a specific direction (up). The combo (somersault kick) is also dependent on the selection of a character (Ryu) (The combo is also dependent on a host of factors we left out, eg. the start button, the screen working, electricity, etc., but let's ignore those for now!). 
+							<p>There has been a growing movement in the utilization of technology for citizen participation. Cities have started using location sharing technologies to address issues such as potholes and waste. A prime example of this is the city of Dayton, Ohio. Dayton implemented an application where citizens can send pictures of potholes along with their location, and the city will fix the pothole within 48 hours. Successes like this one demonstrate the power of technology when it comes to citizen participation.
 							<br><br>
-							In a relational database model, you might store this data in multiple tables: Combo, Action, Control, Control Direction, Character. You would need to perform a number of joins to get the impact analysis results you want, and if you ever wanted to do more than analyze the impact of a broken control,  you would likely need to change your database schema or develop an even more complicated query. Graphing databases are designed to store interconnected data such as this, and make traversing dependencies across a network easy. With Neo4j and Cypher, all we need is a simple query to perform the analysis we want: "MATCH (c:Joystick)-[rel:MOVE]->(a:Action), (p:Character)-->(a) WHERE p.name='Ryu' AND rel.direction='up' OPTIONAL MATCH (a)-->(d:Combo) RETURN a, d".
+							While many citizen participation technologies have focussed on providing services, Walkable is focussed on collecting feedback. The ultimate goal, of course, is to provide data that local governments and NGOs can use to provide services. However, not all requests are as straightforward as fixing potholes. Potholes should always be fixed. Crosswalks should not necessarily always be placed where pedestrians want them. Pedestrian feedback is just one piece of information needed for crosswalk placement.
 							<br><br>
-							While "Broken" Street Fighter's utilization of Ne04j was fairly limited, the capacity of the database to support related activities and analysis is far reaching, even in its current state. Our application focussed on analyzing the impact of a single control breaking. However, we could just as easily use the database to analyze the impact of multiple controls breaking, of the entire joystick breaking, or even upstream issues like the start button not working. We could even use our database to determine which characters would be most affected by certain controls breaking. Similar to network and IT operations, we could also use our database to figure out the source of issues, as opposed to the impact of issues. Say we knew which actions weren't working while playing Street Fighter. We could use our current database to determine which controls are broken. Furthermore, graph databases easily allow for changing requirements, including a growing number of nodes, relationships, and properties. Say we wanted to update our application to support Street Fighter Three. We could simply create nodes for new characters, nodes for new actions, and connect them with relationships. We could just as easily add a new button, or even change what an existing button does.</p>
+							Although pedestrian feedback is just one piece of information, it is critical to urban planning decisions. It is becoming increasingly important to provide effective avenues for collection of feedback in a society where town halls and council meetings no longer have the level of participation they once did. Walkable provides a platform where a pedestrian simply has to click a button to provide feedback. It also allows administrators to analyze and visualize data to see what is most important to pedestrians. Finally, since Walkable's data is accessible via API or CSV export, local governments and NGOs can easily combine pedestrian data with other data to make more informed, comprehensive decisions.</p>
 						</div>
 					</div>
 				</div>
 				<div class="section-block no-padding-top">
 					<div class="row">
 						<div class="column width-12">
-							<div class="tm-slider-container content-slider" data-animation="slide" data-width="2880" data-height="1800" data-scale-under="960">
+							<div class="tm-slider-container content-slider" data-animation="slide" data-width="2880" data-height="1550" data-scale-under="960">
 								<ul class="tms-slides">
 									<li class="tms-slide" data-image data-as-bkg-image data-force-fit>
-										<img data-src="images2/bsfcontrols.jpg" src="images/blank.png" alt=""/>
+										<img data-src="images2/walkablecrosshere.jpg" src="images/blank.png" alt=""/>
 									</li>
 									<li class="tms-slide" data-image data-as-bkg-image data-force-fit>
-										<img data-src="images2/bsfcharacters.jpg" src="images/blank.png" alt=""/>
+										<img data-src="images2/walkablesessions.jpg" src="images/blank.png" alt=""/>
 									</li>
 									<li class="tms-slide" data-image data-as-bkg-image data-force-fit>
-										<img data-src="images2/bsfresults.jpg" src="images/blank.png" alt=""/>
+										<img data-src="images2/walkabledashboard1.jpg" src="images/blank.png" alt=""/>
 									</li>
 									<li class="tms-slide" data-image data-as-bkg-image data-force-fit>
-										<img data-src="images2/bsfschema.jpg" src="images/blank.png" alt=""/>
+										<img data-src="images2/walkabledashboard2.jpg" src="images/blank.png" alt=""/>
 									</li>
 									<li class="tms-slide" data-image data-as-bkg-image data-force-fit>
-										<img data-src="images2/bsfallnodes.jpg" src="images/blank.png" alt=""/>
-									</li>
-									<li class="tms-slide" data-image data-as-bkg-image data-force-fit>
-										<img data-src="images2/bsfquery.jpg" src="images/blank.png" alt=""/>
-									</li>
-									<li class="tms-slide" data-image data-as-bkg-image data-force-fit>
-										<img data-src="images2/bsfquerytable.jpg" src="images/blank.png" alt=""/>
-									</li>						
+										<img data-src="images2/walkabledashboard3.jpg" src="images/blank.png" alt=""/>
+                                    </li>		
+                                    <li class="tms-slide" data-image data-as-bkg-image data-force-fit>
+										<img data-src="images2/walkabledashboard4.jpg" src="images/blank.png" alt=""/>
+                                    </li>	
+                                    <li class="tms-slide" data-image data-as-bkg-image data-force-fit>
+										<img data-src="images2/walkabledashboard5.jpg" src="images/blank.png" alt=""/>
+                                    </li>	
+                                    <li class="tms-slide" data-image data-as-bkg-image data-force-fit>
+										<img data-src="images2/walkabledashboard6.jpg" src="images/blank.png" alt=""/>
+                                    </li>	
+                                    <li class="tms-slide" data-image data-as-bkg-image data-force-fit>
+										<img data-src="images2/walkablestreetview1.jpg" src="images/blank.png" alt=""/>
+                                    </li>	
+                                    <li class="tms-slide" data-image data-as-bkg-image data-force-fit>
+										<img data-src="images2/walkablestreetview2.jpg" src="images/blank.png" alt=""/>
+                                    </li>					
 								</ul>
 							</div>
 						</div>
@@ -368,7 +378,7 @@
 							<h3 class="mb-50">Technologies</h3>
 						</div>
 						<div class="column width-5">
-							<p>"Broken" Street Fighter was built with JavaScript, Node.js, Express.js, Neo4j, Cypher, HTML, CSS, and Mustache. "Broken" Street Fighter's core functionality, its ability to assess the impact of a broken controller for any character, is made possible by querying a Neo4j database using Cypher query language. The database, including all nodes, relationships, and properties, were created by me and my partner. The database was accessed via Node using Cypher and Neo4j's JavaScript driver.</p>
+							<p>Walkable was built with JavaScript, Node.js, Express.js, REST API, PostgreSQL, Sequelize ORM, React.js, Redux, HTML, CSS, and Bootstrap. Bcrypt was utilized for encryption of user data. Walkable's core functionality, its ability to cluster coordinate data based on adjustable parameters and instantly display cluster data on a map and table, is made possible by combining the DBSCAN clustering algorithm and center point algorithm with Google Maps APIs and React.js. Walkable also utilizes a CSV-export npm package to allow users to export raw coordinate data or structured cluster data for integration with GIS or other systems.</p>
 						</div>
 					</div>
 				</div>
@@ -379,9 +389,9 @@
 					<div class="row">
 						<div class="column width-12">
 							<ul>
-								<li><a class="pagination-previous" href="prop37map.html"><span class="icon-left-open-mini"></span> Prev</a></li>
+								<li><a class="pagination-previous" href="ticketpug.html"><span class="icon-left-open-mini"></span> Prev</a></li>
 								<li><a class="back-to-grid fade-location" href="index.html">Folio Index</a></li>
-								<li><a class="pagination-next" href="ticketpug.html"> Next <span class="icon-right-open-mini"></span></a></li>
+								<li><a class="pagination-next" href="purple.html"> Next <span class="icon-right-open-mini"></span></a></li>
 							</ul>
 						</div>
 					</div>
