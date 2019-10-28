@@ -206,7 +206,7 @@
 													data-animate-in="preset:slideInUpShort;duration:1000ms;"
 													data-no-scale
 												>
-													Suitability Analysis
+													Moving Valmeyer
 												</h1>
 											</div>
 										</div>
@@ -226,9 +226,9 @@
 							<div class="hero-content split-hero-content">
 								<div class="hero-content-inner left horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;delay:200ms;" data-threshold="0.5">
 									<h3 class="mb-50">Brief</h3>
-									<p class="lead">Determined the probable nesting locations of the rare marbled murrelet (Brachyramphus marmoratus) in the Navarro River watershed.</p>
-									<p class="mb-50">A suitability analysis is used to help answer the question of what locations meet a set of conditions. In this suitability analysis, I determined the probable nesting location of the rare marbled murrelet. The marbled murrelet is a secretive bird, but it is thought to make its nests in old growth forests on steep (>20 degrees), west-facing slopes within 35km of the ocean at or around the 150m elevation. The completion of this spatial analysis required a number of steps. First, I used a digital elevation model to generate hillshade, slope, and aspect grides. Then, I loaded costdistance and old growth grids. Then, I queried the grids to determine probable nesting locations based on habitat parameters. Finally, I displayed the resulting habitat patches draped over the digital elevation model with hillshade as a brightness theme and elevation contours overlaid.<br><br>
-									The tools I used include setting Data Frame Projection, setting Geoprocessing Environments, Spatial Analyst: Create Histogram, Spatial Analyst: Slope, Spatial Analyst: Aspect, Spatial Analyst: Hillshade, Spatial Analyst: Contour, Spatial Analyst: Raster Calculator, Symbology, Image Analysis.</p>
+									<p class="lead">Updated parcel information, digitized roads, completed statistical analysis, and made available as Web Map.</p>
+									<p class="mb-50">The scenario for this assignment was that the town of Valmeyer in Illinois took the nearly unprecedented step of moving the entire town from one location to another in order to mitigate its risk from flood. My job was to maintain a GIS layer of parcel information, which describes property boundaries and locations, and which other staff in the assessor's office use in the property appraisals, for the county. Because the town moved, this parcel information was out of date and needed to be updated. In addition, I added information to the parcels to help the state department of emergency management in its analysis of the town's move so that it could better handle future disasters. This information included the mean, minimum, and maximum elevation and slope of each parcel, as well as the mean distance to the location of the old town for each parcel. Also, the county needed a new roads layer covering the new area of Valmeyer, since its old one became outdated when all the homes moved. The official TIGER road lines from the US Census Bureau won't be updated for a while, and the county needed a rough sense of where the roads are for routing emergency vehicles.<br><br>
+									The tools I used include setting Geoprocessing Environments, Spatial Analyst: Slope, Spatial Analyst: Zonal Statistics, Data Management: Join Field, Spatial Analyst: Euclidean Distance, Create Feature: Polyline, Symbology, Web Maps.</p>
 									<ul class="social-list list-horizontal">
 										<li><a onclick="window.open('http://www.arcgis.com/home/item.html?id=3ad2b77860114d66840654d2eeaed9ea')" title="View Map Package"><span class="icon-laptop small"></span></a></li>
 										<li><a href="files/California2012Proposition37.pdf" target="_blank" title="View PDF" download><span class="icon-map small"></span></a></li>
