@@ -153,7 +153,7 @@ h6{
 	line-height: 1.2;
 }
 .title-medium{
-	font-size: 2.476rem
+	font-size: 2.476rem;
 	line-height: 1.2;
 }
 .title-small{
@@ -2090,6 +2090,22 @@ h3.project-title{
 
 .hero-5-4 .media-column-prop37map{
 	background-image: url(../images2/prop37map.jpg);
+}
+
+.hero-5-4 .media-column-navarromap{
+	background-image: url(../images2/navarromap.jpg);
+}
+
+.hero-5-4 .media-column-valmeyermap{
+	background-image: url(../images2/valmeyermap.jpg);
+}
+
+.hero-5-4 .media-column-streamlinesdem{
+	background-image: url(../images2/streamlinesdem.jpg);
+}
+
+.hero-5-4 .media-column-suitability{
+	background-image: url(../images2/suitability.jpg);
 }
 
 .hero-5-4 .media-column-ticketpug{
